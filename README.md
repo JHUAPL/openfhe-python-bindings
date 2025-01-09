@@ -1,6 +1,6 @@
 # OpenFHE Python bindings
 
-Python bindings for OpenFHE's implementation of CKKS and BGV encryption schemes, including arithmetic operations, bootstraping, and neural network operations. This README has instructions for building a Python wheel file, which can be imported as a Python module for use in Python codebases. These bindings are a dependency for code developed that accompanies the manuscript: [High-Resolution Convolutional Neural Networks on Homomorphically Encrypted Data via Sharding Ciphertexts
+Python bindings for OpenFHE's implementation of CKKS and BGV encryption schemes, including arithmetic operations, bootstraping, and neural network operations. This README has instructions for building a Python wheel file, which can be imported as a Python module for use in Python codebases. These bindings are a dependency for [code developed](https://github.com/JHUAPL/SHIELD) that accompanies the manuscript: [High-Resolution Convolutional Neural Networks on Homomorphically Encrypted Data via Sharding Ciphertexts
 ](https://arxiv.org/abs/2306.09189).
 
 ## Requirements
