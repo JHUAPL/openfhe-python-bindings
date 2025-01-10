@@ -42,8 +42,7 @@ RUN pip install "numpy<2.0.0"
 
 # Install boost
 RUN set -ex; \
-    wget --ca-certificate=/etc/pki/ca-trust/extracted/openssl/ca-bundle.trust.crt \
-    	 https://boostorg.jfrog.io/artifactory/main/release/1.84.0//source/boost_1_84_0.tar.gz; \
+    wget https://sourceforge.net/projects/boost/files/boost/1.84.0/boost_1_84_0.tar.gz/download -O boost_1_84_0.tar.gz; \
     tar xzf ./boost_1_84_0.tar.gz; \
     cd boost_1_84_0; \
     ./bootstrap.sh; \
