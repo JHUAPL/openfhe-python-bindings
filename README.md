@@ -33,4 +33,4 @@ Once installed, the bindings can be imported with `import pyOpenFHE`. See the SH
 
 ## Citation and Acknowledgements
 
-Please cite this work if using it on other projects. In addition to the authors on the supporting manuscript (Vivian Maloney, Freddy Obrect, Vikram Saraph, Prathibha Rama, and Kate Tallaksen), Aaron Pendergrass and Charlie Schneider also made significant contributions to this work.
+Please cite this work if using it on other projects. In addition to the authors on the supporting manuscript (Vivian Maloney, Freddy Obrecht, Vikram Saraph, Prathibha Rama, and Kate Tallaksen), Aaron Pendergrass and Charlie Schneider also made significant contributions to this work.
