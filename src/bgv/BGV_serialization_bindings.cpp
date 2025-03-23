@@ -41,7 +41,7 @@ void export_BGV_serialization_boost() {
 
   /*
   The difference is naming between these and the above functions is unfortunate,
-  but hard to avoid given how PALISADE works in C++.
+  but hard to avoid given how OpenFHE works in C++.
   Deserializing these keys requires being passed a CryptoContext object,
   while the above keys do not.
   */

@@ -1,7 +1,7 @@
 // (c) 2021-2024 The Johns Hopkins University Applied Physics Laboratory LLC (JHU/APL).
 
-#ifndef PALISADE_PYTHON_SERIALIZATION_H
-#define PALISADE_PYTHON_SERIALIZATION_H
+#ifndef OPENFHE_PYTHON_SERIALIZATION_H
+#define OPENFHE_PYTHON_SERIALIZATION_H
 
 #include <complex>
 #include <stdexcept>
@@ -91,4 +91,4 @@ bool DeserializeFromFile_EvalAutomorphismKey_CryptoContext(
 
 } // namespace pyOpenFHE_CKKS
 
-#endif /* PALISADE_PYTHON_SERIALIZATION_H */
+#endif /* OPENFHE_PYTHON_SERIALIZATION_H */

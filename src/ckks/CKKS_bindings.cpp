@@ -1,12 +1,11 @@
 // (c) 2021-2024 The Johns Hopkins University Applied Physics Laboratory LLC (JHU/APL).
 
-// python bindings for PALISADE's CKKS functionality
+// python bindings for OpenFHE's implementation of CKKS
 
 #include <complex>
 #include <stdexcept>
 #include <vector>
 
-// string formatting for exceptions
 #include <fmt/format.h>
 
 #include <boost/python.hpp>
@@ -91,9 +90,6 @@ void export_CKKS_Ciphertext_boost() {
       .def(self -= double())
       .def(self - double())
       .def(double() - self)
-      //   .def(self *= int())
-      //   .def(self * int())
-      //   .def(int() * self)
       .def(self *= double())
       .def(self * double())
       .def(double() * self)
@@ -103,10 +99,7 @@ void export_CKKS_Ciphertext_boost() {
       .def(self * other<ndarray>())
       .def(other<list>() * self)
       .def(other<ndarray>() * self)
-      
-      // prevents weird numpy broadcasting
       .def("__array_ufunc__", &pyOpenFHE_CKKS::CKKSCiphertext::array_ufunc)
-
       .def_pickle(CKKSCiphertext_pickle_suite())
       .attr("__module__") = "pyOpenFHE.CKKS";
 }

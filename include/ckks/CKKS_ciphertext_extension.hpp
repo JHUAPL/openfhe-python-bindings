@@ -1,7 +1,7 @@
 // (c) 2021-2024 The Johns Hopkins University Applied Physics Laboratory LLC (JHU/APL).
 
-#ifndef CKKS_PALISADE_PYTHON_CIPHERTEXT_H
-#define CKKS_PALISADE_PYTHON_CIPHERTEXT_H
+#ifndef CKKS_OPENFHE_PYTHON_CIPHERTEXT_H
+#define CKKS_OPENFHE_PYTHON_CIPHERTEXT_H
 
 #include <complex>
 #include <vector>
@@ -203,4 +203,4 @@ CKKSCiphertext operator*(const boost::python::numpy::ndarray &vals,
 
 } // namespace pyOpenFHE_CKKS
 
-#endif /* CKKS_PALISADE_PYTHON_CIPHERTEXT_H */
+#endif /* CKKS_OPENFHE_PYTHON_CIPHERTEXT_H */

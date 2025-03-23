@@ -6,7 +6,6 @@
 #include <string>
 #include <vector>
 
-// string formatting for exceptions
 #include <fmt/format.h>
 
 #include <boost/python.hpp>
@@ -32,9 +31,7 @@ CKKSCryptoContext CKKSCiphertext::getCryptoContext(void) const {
 CKKSCiphertext CKKSCiphertext::array_ufunc(
     const boost::python::object ufunc, const boost::python::str method,
     const boost::python::numpy::ndarray &vals, const CKKSCiphertext &cipher) {
-  // because this is defined, numpy will call into this instead of ufunc
-  std::string op =
-      boost::python::extract<std::string>(ufunc.attr("__name__"))();
+  std::string op =boost::python::extract<std::string>(ufunc.attr("__name__"))();
 
   if (op == "multiply") {
     return cipher * vals;
@@ -221,8 +218,6 @@ CKKSCiphertext operator+=(CKKSCiphertext &ctxt, std::vector<double> vals) {
                                 vals.size(), N);
     throw std::runtime_error(s);
   }
-  // size_t final_size = ctxt.cipher->GetCryptoContext()->GetRingDimension() /
-  // 2; tileVector(vals, final_size);
   auto ptxt = ctxt.cipher->GetCryptoContext()->MakeCKKSPackedPlaintext(vals);
   ctxt.cipher = ctxt.cipher->GetCryptoContext()->EvalAdd(ctxt.cipher, ptxt);
   return ctxt;

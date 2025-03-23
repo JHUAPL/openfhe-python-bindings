@@ -1,7 +1,7 @@
 // (c) 2021-2024 The Johns Hopkins University Applied Physics Laboratory LLC (JHU/APL).
 
-#ifndef CKKS_PALISADE_PYTHON_BINDINGS_H
-#define CKKS_PALISADE_PYTHON_BINDINGS_H
+#ifndef CKKS_OPENFHE_PYTHON_BINDINGS_H
+#define CKKS_OPENFHE_PYTHON_BINDINGS_H
 
 namespace pyOpenFHE_CKKS {
 

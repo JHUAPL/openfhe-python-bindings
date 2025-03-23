@@ -2,8 +2,8 @@
 
 // encrypt, decrypt, keygeneration, and the like
 
-#ifndef CKKS_ENCRYPTION_PALISADE_PYTHON_BINDINGS_H
-#define CKKS_ENCRYPTION_PALISADE_PYTHON_BINDINGS_H
+#ifndef CKKS_ENCRYPTION_OPENFHE_PYTHON_BINDINGS_H
+#define CKKS_ENCRYPTION_OPENFHE_PYTHON_BINDINGS_H
 
 #include <boost/python.hpp>
 #include <boost/python/numpy.hpp>

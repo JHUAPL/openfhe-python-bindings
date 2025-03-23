@@ -25,7 +25,6 @@ int shift_to_kernel_index(int shift, int ker_size) {
             return i;
         }
     }
-    throw std::invalid_argument("test");
 }
 
 // mask gen
